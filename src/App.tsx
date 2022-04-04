@@ -1,4 +1,4 @@
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import SearchParams from "./SearchParams";
 import { StrictMode, useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
@@ -24,4 +24,5 @@ const App = () => {
   );
 };
 
-render(<App />, document.getElementById("root"));
+const root = createRoot( document.getElementById("root") as HTMLDivElement);
+root.render(<App />);
