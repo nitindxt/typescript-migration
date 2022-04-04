@@ -20,8 +20,14 @@ class Details extends Component<{params: { id?: string}}> {
   };
 
   async componentDidMount() {
+    if(!this.props.params.id){
+      return;//not sure about this but i found a hack of not writing this if(defensive) statement
+      //by following warning's link https://typescript-eslint.io/rules/restrict-template-expressions/
+      //that you can write the template expression as `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id} || 'default'`
+      //which will either return res or undefined(default means this)
+    }
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id || 'default'}`
+      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`
     );
     const json = (await res.json()) as PetAPIResponse;
     this.setState(Object.assign({ loading: false }, json.pets[0]));
