@@ -4,24 +4,24 @@ import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 import Modal from "./Modal";
-import {Animal, PetAPIResponse} from "./APIResponsesTypes";
+import { Animal, PetAPIResponse } from "./APIResponsesTypes";
 
-class Details extends Component<{params: { id?: string}}> {
-  state = { 
-  loading: true, 
-  showModal: false,
-  animal: "" as Animal,
-  breed: "",
-  city: "",
-  state: "",
-  description: "",
-  name: "",
-  images: [] as string[],
+class Details extends Component<{ params: { id?: string } }> {
+  state = {
+    loading: true,
+    showModal: false,
+    animal: "" as Animal,
+    breed: "",
+    city: "",
+    state: "",
+    description: "",
+    name: "",
+    images: [] as string[],
   };
 
   async componentDidMount() {
-    if(!this.props.params.id){
-      return;//not sure about this but i found a hack of not writing this if(defensive) statement
+    if (!this.props.params.id) {
+      return; //not sure about this but i found a hack of not writing this if(defensive) statement
       //by following warning's link https://typescript-eslint.io/rules/restrict-template-expressions/
       //that you can write the template expression as `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id} || 'default'`
       //which will either return res or undefined(default means this)

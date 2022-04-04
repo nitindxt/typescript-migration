@@ -1,4 +1,9 @@
-import React, { FunctionComponent,MutableRefObject, useEffect, useRef } from "react";
+import React, {
+  FunctionComponent,
+  MutableRefObject,
+  useEffect,
+  useRef,
+} from "react";
 import { createPortal } from "react-dom";
 
 const Modal: FunctionComponent = ({ children }) => {
@@ -9,16 +14,17 @@ const Modal: FunctionComponent = ({ children }) => {
 
   useEffect(() => {
     const modalRoot = document.getElementById("modal");
-    if(!modalRoot || !elRef.current){//if modalRoot|elref.current is null then return
+    if (!modalRoot || !elRef.current) {
+      //if modalRoot|elref.current is null then return
       //we have to do this as to assure static type cheking because in line 16 we can't appendChild a null.
       return;
     }
     modalRoot.appendChild(elRef.current);
     return () => {
-      if(elRef.current){//if it does exist then removeChild (cleanUp)
-        modalRoot.removeChild(elRef.current)
-      } 
-      
+      if (elRef.current) {
+        //if it does exist then removeChild (cleanUp)
+        modalRoot.removeChild(elRef.current);
+      }
     };
   }, []);
 

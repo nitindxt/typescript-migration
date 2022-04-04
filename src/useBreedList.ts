@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Animal, BreedListAPIResponse } from "./APIResponsesTypes";
 
 const localCache: {
-[index: string]: string[]
+  [index: string]: string[];
 } = {};
 
 type Status = "unloaded" | "loading" | "loaded";
@@ -17,13 +17,13 @@ export default function useBreedList(animal: Animal) {
     } else if (localCache[animal]) {
       setBreedList(localCache[animal]);
     } else {
-      void requestBreedList();//void js keyword tells that requestBreedList() promise can return anything|undefined, so ignore
+      void requestBreedList(); //void js keyword tells that requestBreedList() promise can return anything|undefined, so ignore
     }
 
     async function requestBreedList() {
       setBreedList([]);
       setStatus("loading");
-      if(!animal){
+      if (!animal) {
         return;
       }
       const res = await fetch(
