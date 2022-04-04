@@ -1,8 +1,8 @@
-14421
+14420
 55/home/nits/Documents/typescript-migration/tsconfig.json1649033077285442600 0
 53/home/nits/Documents/typescript-migration/.prettierrc1649031536195442600 0
 57/home/nits/Documents/typescript-migration/dist/index.html1649070315250385900 0
-64/home/nits/Documents/typescript-migration/dist/index.0513734e.js1649070217150385900 0
+64/home/nits/Documents/typescript-migration/dist/index.0513734e.js1649071246170385900 0
 69/home/nits/Documents/typescript-migration/dist/index.2cdaf7bc.css.map1649070217090385900 0
 49/home/nits/Documents/typescript-migration/LICENSE1649031449975442600 0
 54/home/nits/Documents/typescript-migration/package.json1649070215670385900 0
@@ -378,7 +378,7 @@
 89/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/midi.js1649032092365442600 0
 92/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/css-all.js1649032092075442600 0
 107/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/viewport-unit-variants.js1649032092475442600 0
-53/home/nits/Documents/typescript-migration/src/App.tsx1649062846018433000 0
+53/home/nits/Documents/typescript-migration/src/App.tsx1649071326000385900 0
 109/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/css-file-selector-button.js1649032092105442600 0
 92/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/portals.js1649032092395442600 0
 106/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/features/extended-system-fonts.js1649032092235442600 0
@@ -3259,7 +3259,7 @@
 97/home/nits/Documents/typescript-migration/node_modules/supports-preserve-symlinks-flag/browser.js1649032091265442600 0
 88/home/nits/Documents/typescript-migration/node_modules/es-abstract/2018/DayWithinYear.js1649032105275442600 0
 97/home/nits/Documents/typescript-migration/node_modules/terser/node_modules/source-map/lib/wasm.js1649032103595442600 0
-68/home/nits/Documents/typescript-migration/dist/index.0513734e.js.map1649070217160385900 0
+68/home/nits/Documents/typescript-migration/dist/index.0513734e.js.map1649071246180385900 0
 112/home/nits/Documents/typescript-migration/node_modules/terser/node_modules/source-map/lib/source-map-consumer.js1649032103485442600 0
 74/home/nits/Documents/typescript-migration/node_modules/fast-glob/out/types1649045759791260300 1
 82/home/nits/Documents/typescript-migration/node_modules/es-abstract/2015/ToInt16.js1649032107825442600 0
@@ -3282,7 +3282,7 @@
 105/home/nits/Documents/typescript-migration/node_modules/@parcel/transformer-babel/node_modules/.bin/semver1649032118605442600 0
 100/home/nits/Documents/typescript-migration/node_modules/es-abstract/2019/CreateDataPropertyOrThrow.js1649032104825442600 0
 85/home/nits/Documents/typescript-migration/node_modules/csso/lib/replace/Percentage.js1649032091575442600 0
-46/home/nits/Documents/typescript-migration/dist1649070315260385900 1
+46/home/nits/Documents/typescript-migration/dist1649071246180385900 1
 86/home/nits/Documents/typescript-migration/node_modules/caniuse-lite/data/regions/TZ.js1649032092455442600 0
 99/home/nits/Documents/typescript-migration/node_modules/@swc/helpers/lib/_class_private_field_get.js1649032092755442600 0
 120/home/nits/Documents/typescript-migration/node_modules/@babel/runtime-corejs3/helpers/esm/classExtractFieldDescriptor.js1649032105755442600 0
@@ -8894,7 +8894,7 @@
 61/home/nits/Documents/typescript-migration/node_modules/parcel1649032102975442600 1
 160/home/nits/Documents/typescript-migration/node_modules/typescript/loc/lcl/DEU/TypeScriptLanguageService/Microsoft.CodeAnalysis.TypeScript.EditorFeatures.dll.lcl1649032837285442600 0
 81/home/nits/Documents/typescript-migration/node_modules/emoji-regex/es2015/text.js1649032101485442600 0
-41/home/nits/Documents/typescript-migration1649070217070385900 1
+41/home/nits/Documents/typescript-migration1649071170600385900 1
 123/home/nits/Documents/typescript-migration/node_modules/@typescript-eslint/utils/dist/eslint-utils/batchedSingleLineTests.js1649045759561260300 0
 80/home/nits/Documents/typescript-migration/node_modules/parcel/src/.eslintrc.json1649032102935442600 0
 104/home/nits/Documents/typescript-migration/node_modules/@babel/runtime-corejs3/helpers/esm/temporalRef.js1649032105975442600 0
@@ -14209,7 +14209,6 @@
 91/home/nits/Documents/typescript-migration/node_modules/core-js-pure/features/is-iterable.js1649032109685442600 0
 99/home/nits/Documents/typescript-migration/node_modules/core-js-pure/features/async-iterator/drop.js1649032105805442600 0
 99/home/nits/Documents/typescript-migration/node_modules/core-js-pure/features/async-iterator/from.js1649032108885442600 0
-57/home/nits/Documents/typescript-migration/.gitignore copy1649031536145442600 0
 79/home/nits/Documents/typescript-migration/node_modules/core-js-pure/actual/json1649032110545442600 1
 97/home/nits/Documents/typescript-migration/node_modules/core-js-pure/proposals/array-from-async.js1649032103615442600 0
 83/home/nits/Documents/typescript-migration/node_modules/core-js-pure/features/string1649032110685442600 1
