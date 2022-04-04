@@ -4,7 +4,7 @@ import Carousel from "./Carousel";
 import ErrorBoundary from "./ErrorBoundary";
 import ThemeContext from "./ThemeContext";
 import Modal from "./Modal";
-import {Pet, Animal, PetAPIResponse} from "./APIResponsesTypes";
+import {Animal, PetAPIResponse} from "./APIResponsesTypes";
 
 class Details extends Component<{params: { id?: string}}> {
   state = { 
@@ -21,7 +21,7 @@ class Details extends Component<{params: { id?: string}}> {
 
   async componentDidMount() {
     const res = await fetch(
-      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id}`
+      `http://pets-v2.dev-apis.com/pets?id=${this.props.params.id || 'default'}`
     );
     const json = (await res.json()) as PetAPIResponse;
     this.setState(Object.assign({ loading: false }, json.pets[0]));

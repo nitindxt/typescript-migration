@@ -1,6 +1,10 @@
-import { Component } from "react";
+import { Component, MouseEvent} from "react";
 
-class Carousel extends Component {
+interface IProps{
+  //I prefix in naming interface comes from tslint(deprecated) and most prolly a .net thing as C# Guy wrote TS
+  images:string[]
+}
+class Carousel extends Component<IProps> {
   state = {
     active: 0,
   };
@@ -8,11 +12,17 @@ class Carousel extends Component {
   static defaultProps = {
     images: ["http://pets-images.dev-apis.com/pets/none.jpg"],
   };
+//MouseEvent<HTMLElement> is react's and <HTMLElement> is target of MouseEvent
+  handleIndexClick = (event: MouseEvent<HTMLElement>): void => {
+    if(!(event.target instanceof HTMLElement)){
+      return;
+    }
 
-  handleIndexClick = (event) => {
-    this.setState({
-      active: +event.target.dataset.index,
-    });
+    if(event.target.dataset.index){
+      this.setState({
+        active: +event.target.dataset.index,
+      });
+    }
   };
 
   render() {
